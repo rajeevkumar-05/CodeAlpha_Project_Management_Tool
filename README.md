@@ -297,7 +297,7 @@ git commit -m "feat: complete MERN stack project management tool for CodeAlpha i
 git branch -M main
 
 # 5. Add your GitHub repository remote
-git remote add origin https://github.com/<your-username>/CodeAlpha_Project_Management_Tool.git
+git remote add origin https://github.com/rajeevkumar-05/CodeAlpha_Project_Management_Tool.git
 
 # 6. Push to GitHub
 git push -u origin main
