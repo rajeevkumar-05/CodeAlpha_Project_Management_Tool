@@ -1,0 +1,28 @@
+{
+  "name": "codealpha-project-management-tool",
+  "version": "1.0.0",
+  "description": "Full-Stack Project Management Tool (Trello/Asana clone) built with MERN stack for CodeAlpha Internship",
+  "scripts": {
+    "dev": "npm --prefix client run dev",
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "build:client": "npm --prefix client run build"
+  },
+  "keywords": [
+    "codealpha",
+    "mern",
+    "project-management",
+    "trello",
+    "kanban",
+    "react",
+    "vite",
+    "mongodb",
+    "nodejs",
+    "express"
+  ],
+  "author": "CodeAlpha Intern",
+  "license": "MIT"
+}
