@@ -13,3 +13,5 @@ export function renderTaskTitle(element, title) {
 // Suggested fixes for a follow-up commit:
 // Parse the intended JSON input with JSON.parse(input).
 // Render plain task titles with element.textContent = title.
+
+// Trigger a fresh review after installing the CodeLens GitHub integration.
