@@ -1,0 +1,24 @@
+name: CodeLens setup verification
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/codelens-*.yml'
+      - 'src/review/**'
+      - 'scripts/review-pr.mjs'
+      - 'tests/scanner.test.mjs'
+      - 'tests/workflow.test.mjs'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check scripts/review-pr.mjs
+      - run: node --test tests/scanner.test.mjs tests/workflow.test.mjs
