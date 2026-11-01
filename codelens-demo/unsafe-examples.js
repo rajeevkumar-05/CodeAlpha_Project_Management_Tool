@@ -15,3 +15,5 @@ export function renderTaskTitle(element, title) {
 // Render plain task titles with element.textContent = title.
 
 // Trigger a fresh review after installing the CodeLens GitHub integration.
+
+// Recheck using the current default-branch scanner configuration.
